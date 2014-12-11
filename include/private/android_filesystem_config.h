@@ -132,6 +132,9 @@
 #define AID_SENSORS       3011 /* access to /dev/socket/sensor_ctl_socket & QCCI/QCSI */
 
 
+#define AID_RFS           3012  /* Remote Filesystem for peripheral processors */
+#define AID_RFS_SHARED    3013  /* Shared files for Remote Filesystem for peripheral processors  */
+
 #define AID_EVERYBODY     9997  /* shared between all apps in the same profile */
 #define AID_MISC          9998  /* access to misc storage */
 #define AID_NOBODY        9999
@@ -241,6 +244,9 @@ static const struct android_id_info android_ids[] = {
 
     { "rfs_old",           AID_RFS_OLD, },
     { "rfs_shared_old",    AID_RFS_SHARED_OLD, },
+
+    { "rfs",           AID_RFS, },
+    { "rfs_shared",    AID_RFS_SHARED, },
 
     { "everybody",     AID_EVERYBODY, },
     { "misc",          AID_MISC, },
